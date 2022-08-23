@@ -1,0 +1,15 @@
+## ===========================================================
+##   BASE CONFIGURATION TO ADD FABRIC 1.18.2 TO MULTICRAFT
+## ===========================================================
+
+[config]
+name = [Fabric] 1.18.2
+source = https://meta.fabricmc.net/v2/versions/loader/1.18.2/0.14.9/0.11.0/server/jar
+configSource = https://raw.githubusercontent.com/Phaxius/MulticraftConfigs/main/fabric/fabric1.18.2.jar.conf
+[encoding]
+encode = utf-8
+decode = utf-8
+fileEncoding = latin-1
+
+[start]
+command = "{JAVA}" -server -Xmx{MAX_MEMORY}M -Xms{START_MEMORY}M -Djline.terminal=jline.UnsupportedTerminal -jar "{JAR}" nogui {PARAMS}
